@@ -38,6 +38,9 @@ public class Car extends Vehicle{
     public void setSpeed(int speed) {
         this.speed = speed;
     }
+    public String getDescription(){
+        return " is a "+getColor()+" "+getBrand()+". It can go up to "+getSpeed()+ " mph.";
+    }
 
     @Override
     public String getVehicleAccelerate (){
