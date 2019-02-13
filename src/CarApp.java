@@ -10,6 +10,8 @@ public class CarApp {
         String color;
         String brand;
         int speed;
+        Person bob = new Person();
+        bob.setName("Bob");
         do {
             car = new Car();
             System.out.print("\n"+"Please enter in your car's color: ");
@@ -33,6 +35,7 @@ public class CarApp {
                 System.out.println("Car "+x+c.getDescription());
                 x+=1;
             }
+        System.out.println(bob.getName()+" is driving a "+ car.getColor()+" "+car.getBrand()+".");
             // below is the race game that I created to put two cars against each other. Honda only has 33% chance of winning while porshe has a 66% chance of winning.
 
 //        Car porshe = new Car();
